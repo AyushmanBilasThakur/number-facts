@@ -1,0 +1,22 @@
+inputfield = document.getElementById("number");
+outfield = document.getElementById("fact");
+url = "http://numbersapi.com/"
+document.getElementById("number").addEventListener("input", fun);
+
+function fun(){
+    outfield.style.display = "block";
+    console.log(inputfield.value);
+    if(inputfield.value != ""){
+        urlsnd = url+inputfield.value;
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", urlsnd);
+        xhr.onload = function(){
+            if(this.status == 200){
+                outfield.innerHTML = this.responseText;
+            }
+        }
+
+        xhr.send();
+    }
+
+}
