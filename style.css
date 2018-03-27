@@ -40,7 +40,28 @@ input:focus {
   
 
 #fact{
-    padding: 60px;
+    padding: 30px 60px;
     display: none;
     font-size: 25px;
+}
+
+#submit{
+    margin-top: 10px;
+    padding: 10px 30px;
+    color: #ffffff;
+    background: rgb(27, 119, 65);
+    font-size: 20px;
+    border: none;
+    outline: none;
+    transition: background-color .3s;
+    border-radius: 15px;
+}
+#submit:hover{
+    background: rgb(19, 83, 46);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }

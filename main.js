@@ -2,6 +2,7 @@ inputfield = document.getElementById("number");
 outfield = document.getElementById("fact");
 url = "http://numbersapi.com/"
 document.getElementById("number").addEventListener("input", fun);
+document.getElementById("submit").addEventListener("click", fun);
 
 function fun(){
     outfield.style.display = "block";
@@ -17,6 +18,9 @@ function fun(){
         }
 
         xhr.send();
+    }
+    else{
+        outfield.innerHTML = ""
     }
 
 }
