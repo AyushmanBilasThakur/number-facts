@@ -1,6 +1,6 @@
 inputfield = document.getElementById("number");
 outfield = document.getElementById("fact");
-url = "https://numbersapi.com/"
+url = "http://numbersapi.com/"
 document.getElementById("number").addEventListener("input", fun);
 document.getElementById("submit").addEventListener("click", fun);
 
